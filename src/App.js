@@ -11,7 +11,7 @@ function App() {
     const[data, setData] = useState({items:[]})
 
     useEffect(()=>{
-                fetch("http://localhost:3000/items")
+                fetch("https://ims-react-jaskaran.herokuapp.com/items")
                     .then(res => res.json())
                     .then( data => {
                         setData({items: data});
@@ -24,7 +24,7 @@ function App() {
 
     const deleteItem = (item) => {
         const items = data["items"];
-        fetch(`http://localhost:3000/items/${item.id}`,{method:"DELETE"}).then((response)=>{
+        fetch(`https://ims-react-jaskaran.herokuapp.com/items/${item.id}`,{method:"DELETE"}).then((response)=>{
             if (response.ok) {
                 const idx=items.indexOf(item);
                 items.splice(idx,1);
@@ -43,7 +43,7 @@ function App() {
             },
             body: JSON.stringify(item) ,
         };
-        fetch("http://localhost:3000/items", request).then((response) => {
+        fetch("https://ims-react-jaskaran.herokuapp.com/items", request).then((response) => {
             return response.json();
         }).then((data) => {
             items.push(data);
