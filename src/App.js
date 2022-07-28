@@ -61,7 +61,7 @@ function App() {
             if(filters.name !== "" && item.name !== filters.name){
                 continue;
             }
-            if(filters.price !== 0 && item.name >= filters.price){
+            if(filters.price !== 0 && item.price <= filters.price){
                 continue;
             }
             if(filters.type !== "" && item.type !== filters.type){

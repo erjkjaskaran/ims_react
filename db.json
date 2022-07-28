@@ -20,6 +20,34 @@
       "brand": "c",
       "type": "c",
       "id": 3
+    },
+    {
+      "name": "d",
+      "price": 0,
+      "brand": "d",
+      "type": "d",
+      "id": 4
+    },
+    {
+      "name": "a",
+      "price": 0,
+      "brand": "c",
+      "type": "b",
+      "id": 5
+    },
+    {
+      "name": "a",
+      "price": 0,
+      "brand": "b",
+      "type": "c",
+      "id": 6
+    },
+    {
+      "name": "a",
+      "price": 0,
+      "brand": "b",
+      "type": "b",
+      "id": 7
     }
   ]
 }
